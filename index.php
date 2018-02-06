@@ -14,7 +14,7 @@
 
 	</head>
 	<body>
-		<img id="myimage" onmousedown="lighton()" onmouseup="lightoff()" src="bulboff.gif" width="100" height="180" />
+		<img id="myimage" onclick="lighton()" onmouseup="lightoff()" src="bulboff.gif" width="100" height="180" />
 
 
 
@@ -29,5 +29,17 @@
 			document.getElementById("p2").style.fontFamily = "Arial";
 			document.getElementById("p2").style.fontSize = "larger";
 		</script>
+
+		<script>
+			function changeColor(p4)
+			{
+				document.getElementById(p4).style.color = "#FFE0C6"; // textcolor
+				document.getElementById(p4).style.backgroundColor = "#ff3446"; // backcolor
+			}
+		</script>
+
+		<div id="p4">Hello There !!</div>
+
+		<a href="#" onclick="changeColor('p4'); return false;">Change Color</a>
 	</body>
 </html>
